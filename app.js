@@ -30,7 +30,7 @@ function changeWeatherUI() {
     }
 }
 function weatherReport(data) {
-    var urlWeatherReport=`http://api.openweathermap.org/data/2.5/weather?q=${data.name}&appid=acf3af863acf99df0d6e052b4af19254`
+    var urlWeatherReport=`https://api.openweathermap.org/data/2.5/weather?q=${data.name}&appid=acf3af863acf99df0d6e052b4af19254`
     fetch(urlWeatherReport)
         .then(res => {
             return res.json()
@@ -71,7 +71,7 @@ function weatherReport(data) {
 function renderInfo() {
     var place=searchBtn.value;
     if(place) {
-        var urlSearch=`http://api.openweathermap.org/data/2.5/weather?q=${place}&appid=acf3af863acf99df0d6e052b4af19254`
+        var urlSearch=`https://api.openweathermap.org/data/2.5/weather?q=${place}&appid=acf3af863acf99df0d6e052b4af19254`
         fetch(urlSearch) 
            .then(res => {
                return res.json()
