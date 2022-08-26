@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url('./img/tải\ xuống.png') no-repeat center/cover;
+    text-align: center;
+}
+#app {
+    min-width: 350px;
+    height: 560px;
+    background: url('./img/tải\ xuống.png') no-repeat center/cover;
+    padding: 24px 24px 40px 24px;
+    border-radius: 10px;
+}
+#search__place {
+    border: none;
+    outline: none;
+    padding: 12px;
+    width: 100%;
+    border-radius:0 15px 0 15px ;
+    font-size: 16px;
+    box-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+    margin-top: 8px;
+    background-color: rgba(255,255,255,0.5);
+    transition: .6s;
+}
+#search__place:focus {
+    border-radius: 15px 0 15px 0;
+    background-color: #f1f1f1;
+
+}
+.content {
+    /* margin: 30px 0 20px 0; */
+}
+.content .place {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 3px 3px  rgba(0,0,0,0.4);
+}
+.content .time {
+    color: #fff;
+    margin: 4px 0 24px 0;
+    text-align: center;
+    font-size: 16px;
+
+}
+.content .temperature {
+    margin: 0 20px;
+    padding: 20px;
+    background: rgba(255,255,255,0.6);
+    font-size: 65px;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 3px 3px  rgba(0,0,0,0.4);
+    box-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+    border-radius: 12px;
+}
+.content .short-desc {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 550;
+    margin: 30px 0 40px;
+}
+.more-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+}
+.more-desc div {
+    display: flex;
+    flex-direction: column;  
+
+}
+.more-desc div i {
+    margin-bottom: 8px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./asset/style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css?fbclid=IwAR3KiX0UeOovH9PGyyaJCVVREdyiN9ewEPqpjRUl4gZIpP590WWTHK6a4eY">
+</head>
+<body>
+    <div id="app">
+        <input type="text" name="search" placeholder="Search..." id="search__place">
+        <div class="content">
+            <div class="place">
+                <span></span>
+            </div>
+            <p class="time"></p>
+            <div class="temperature">
+                <span class="value">28</span>
+                <span><sup>o</sup>C</span>
+            </div>
+            <div class="short-desc">Rain</div>
+            <div class="more-desc">
+                <div class="visibility">
+                    <i class="fa-regular fa-eye"></i>
+                    <span>1000 (m)</span>
+                </div>
+                <div class="wind">
+                    <i class="fa-regular fa-wind"></i>
+                    <span>3.78 (m/s)</span>
+                </div>
+                <div class="humidity">
+                    <i class="fa-regular fa-droplet-degree"></i>
+                    <span>100 (%)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
